@@ -1,0 +1,27 @@
+*.idea
+*.pyc
+*.log
+*.cache
+*.sqlite3
+.benchmarks
+
+__pycache__/
+
+python2
+assets
+python3
+venv
+logs/*
+
+media/*
+static/*
+node_modules
+*tests/snapshots/*
+*tests/fixtures/gitignore/*
+
+local_settings.py
+TODO
+
+Будет удалено .gitignore
+Будет удалено Makefile
+Будет удалено README.md

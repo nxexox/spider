@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  postgresql:
+      image: postgres:9.5
+      container_name: spider-postgresql
+      environment:
+        - POSTGRES_HOST=0.0.0.0
+        - POSTGRES_PORT=5432
+        - POSTGRES_DB=spider
+        - POSTGRES_USER=spider
+        - POSTGRES_PASSWORD=Mother123
+        - PGDATA=/var/lib/postgresql/data/postgres
+        - C_FORCE_ROOT=true
+      ports:
+        - "10437:5432"
+      restart: no-restart
